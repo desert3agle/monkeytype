@@ -48,6 +48,7 @@ build/Release
 
 # Dependency directories
 node_modules/
+node_modules_bak/
 
 # Optional npm cache directory
 .npm
@@ -77,20 +78,39 @@ node_modules/
 .firebaserc
 .firebaserc_copy
 serviceAccountKey*.json
+frontend/src/ts/constants/firebase-config.ts
+frontend/src/ts/constants/firebase-config-live.ts
 
 #generated files
 dist/
+frontend/public/
+backend/globalConfig.json
+backend/server.version
 
 #cloudflare y
 .cloudflareKey.txt
 .cloudflareKey_copy.txt
 purgeCfCache.sh
 
-static/adtest.html
+frontend/static/adtest.html
 backend/lastId.txt
 backend/log_success.txt
-backend/credentials
+backend/credentials/*.json
 backend/.env
 
 static/adtest.html
 backend/migrationStats.txt
+
+# Madge
+dep-graph.png
+
+# TypeScript
+build/
+backend/worker.*
+
+#scripts
+updateContributors.js
+removeDupes.js
+
+ads.txt
+updateContributors.mjs
